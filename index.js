@@ -1,8 +1,11 @@
 var katzDeliLine = []
 
-const takeANumber = (katzDeliLine, name) => {
-  katzDeliLine.push(name)
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+const takeANumber = (katzDeliLine) => {
+  while (true) {
+    ticket_number = katzDeliLine.length + 1
+    katzDeliLine.push(`${ticket_number}`)
+  }
+  return `Welcome you are number ${ticket_number}`
 }
 
 const nowServing = (katzDeliLine) => {
